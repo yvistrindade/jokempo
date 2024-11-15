@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jokempo</title>
+</head>
+
+<body>
+    <h1>jokempo</h1>
+    <h2>jogador</h2>
+    <img src="img/pedra.png" alt="pedra">
+    <img src="img/papel.png" alt="papel">
+    <img src="img/tesoura.png" alt="tesoura">
+    <form>
+
+        <input type="radio" name="escolha" id="pedra">pedra
+        <input type="radio" name="escolha" id="papel">papel
+        <input type="radio" name="escolha" id="tesoura">tesoura
+        <p>
+            <!-- type "button" nao envia o formulario (comportamento padrao)-->
+            <input type="button" value="jogar" onclick="jogar()">
+            <input type="reset" value="reset" onclick="limpar()">
+        </p>
+        <hr>
+    </form>
+    <h2>Computador</h2>
+    <img src="img/pc.png" alt="pc" id="pc">
+    <hr>
+    <h3 id="resultado"></h3>
+    <script src="app.js"></script>
+</body>
+
+</html>
